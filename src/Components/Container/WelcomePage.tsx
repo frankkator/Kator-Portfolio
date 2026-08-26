@@ -80,12 +80,12 @@ export default function WelcomePage() {
 
         {/* Right Column: Profile Content Box */}
         <div className="col-span-1">
-          <div className='rounded-3xl p-6 shadow-lg min-h-[290px] flex items-center justify-center border border-amber-200 bg-white/30 backdrop-blur-md'>
+          <div className='rounded-3xl p-6 shadow-lg min-h-72.5 flex items-center justify-center border border-amber-200 bg-white/30 backdrop-blur-md'>
             <p className="font-custom text-black text-3xl md:text-4xl text-center font-extrabold"> 
               Hi there, So my Name is Frank Kator i'm a software developer and web-designer. I build modern, interactive digital experiences and I'd love to work with you.
             </p>      
           </div>
-          <div className='rounded-3xl p-6 shadow-lg min-h-[126px] flex items-center justify-center border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
+          <div className='rounded-3xl p-6 shadow-lg min-h-31.5 flex items-center justify-center border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
             <p className="font-custom text-black text-2xl md:text-3xl text-center font-extrabold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
             </p>

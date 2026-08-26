@@ -151,7 +151,7 @@ export default function NavBar() {
             Profile
           </a>
           <a href="#projects" onClick={handleScrollLinkClick} className="font-custom text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
-            Projects i created
+            Projects
           </a>
           <a href="#prompts" onClick={handleScrollLinkClick} className="font-custom text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
             Prompts

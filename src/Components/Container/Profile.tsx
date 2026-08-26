@@ -16,7 +16,7 @@ export default function Profile() {
 
           {/* Left Column: Profile Picture */}
           <div className="flex justify-center md:sticky top-6">
-            <div className="bg-amber-700/20 border border-amber-300 rounded-2xl p-4 flex items-center justify-center w-full max-w-[350px] aspect-[4/3]">
+            <div className="bg-amber-700/20 border border-amber-300 rounded-2xl p-4 flex items-center justify-center w-full max-w-87.5 aspect-4/3">
               <img
                 src="" // Add your profile image path here
                 alt="Profile"
