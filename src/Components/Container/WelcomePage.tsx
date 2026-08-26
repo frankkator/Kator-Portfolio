@@ -54,7 +54,7 @@ export default function WelcomePage() {
     <div className="flex flex-col items-center min-h-screen w-full bg-[#f0e68c] relative p-6">
       
       {/* Floating Header */}
-      <div className='flex justify-center border border-amber-200 rounded-2xl shadow-md p-4 bg-white/40 backdrop-blur-sm mb-6'>
+      <div className='flex justify-center border border-amber-200 rounded-2xl shadow-md p-4 bg-white/10 backdrop-blur-sm mb-6'>
         <h1 className="font-custom font-extrabold text-4xl text-amber-950">
           Kator's Portfolio
         </h1>
@@ -77,12 +77,12 @@ export default function WelcomePage() {
         {/* Right Column: Profile Content Box */}
         <div className="lg:grid-span-1">
         <div className=' rounded-3xl p-6 shadow-lg min-62.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
-          <p className="font-custom text-black font-semibold"> 
+          <p className="font-custom text-black font-extrabold"> 
               Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build mordern, interactive digital experinces and I'd love to work with you.
           </p>      
         </div>
         <div className='rounded-3xl p-6 shadow-lg min-62.5 border mt-6 border-amber-200 bg-white/30 '>
-          <p  className="font-custom text-black font-semibold">
+          <p  className="font-custom text-black font-extrabold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
           </p>
           </div>
