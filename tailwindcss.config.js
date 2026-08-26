@@ -5,7 +5,13 @@ module.exports = {
         "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+             fontFamily: {
+        // This maps your existing utility classes to the imported fonts
+        custom: ['MyCustomFont', 'sans-serif'],
+        frank: ['FrankFont', 'serif'],
+      },
+        },
     },
     darkMode: "class",
     plugins: [nextui()],
