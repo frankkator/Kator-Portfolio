@@ -78,12 +78,12 @@ export default function WelcomePage() {
         <div className="lg:grid-span-2">
         <div className=' rounded-3xl p-6 shadow-lg min-62.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
           <p className="font-custom text-black font-semibold"> 
-              Hi there, So my Name is Franklin Kator i'm a software developer and web-designer and i'll be glad to work with you.
+              Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build mordern, interactive digital experinces and I'd love to work with you.
           </p>      
         </div>
         <div className='rounded-3xl p-6 shadow-lg min-62.5 border mt-6 border-amber-200 bg-white/30 '>
           <p  className="font-custom text-black font-semibold">
-              Soo, kindly, check out the projects i've done and contact me if interested.
+              Soo, kindly, check out the projects and prompts i've done and contact me if interested.
           </p>
           </div>
         </div> 

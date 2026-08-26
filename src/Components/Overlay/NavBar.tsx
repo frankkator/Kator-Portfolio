@@ -33,7 +33,7 @@ export default function NavBar() {
               {/* LEFT COLUMN: Explicit Flex row layout for text items */}
               <div className="flex gap-6 items-center justify-start">
                      <a href="#" className="font-custom font-semibold tracking-wide hover:opacity-80 transition-opacity whitespace-nowrap">
-                            Experience
+                            Profile
                      </a>
                      <a href="#" className="font-custom font-semibold underline tracking-wide hover:opacity-80 transition-opacity whitespace-nowrap">
                             Projects i created
@@ -63,7 +63,7 @@ export default function NavBar() {
                                    tabIndex={0}
                                    onClick={toggleDropdown}
                             >
-                                   Goals
+                                   contact info
                                    {showDropdown ? (
                                           <ChevronUp size={16} />
                                    ) : (
@@ -78,13 +78,13 @@ export default function NavBar() {
                                                         to="/profile" 
                                                         className="px-4 py-2 text-sm  hover:bg-amber-300/50  transition-colors font-custom font-bold"
                                                  >
-                                                        Profile
+                                                 Goals
                                                  </NavLink>
                                                  <NavLink 
                                                         to="/account" 
                                                         className="px-4 py-2 text-sm hover:bg-amber-300/50 transition-colors font-custom font-bold"
                                                  >
-                                                        contact info
+                                                        Experience
                                                  </NavLink> 
                                           </div>
                                    </div>
