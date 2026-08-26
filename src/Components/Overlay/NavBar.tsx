@@ -32,10 +32,10 @@ export default function NavBar() {
               
               {/* LEFT COLUMN: Explicit Flex row layout for text items */}
               <div className="flex gap-6 items-center justify-start ">
-                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 transition-colors hover:opacity-80 whitespace-nowrap shadow:lg">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 transition-colors hover:opacity-80 whitespace-nowrap shadow:lg text-white bg-amber-700/40">
                             Profile
                      </a>
-                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colors whitespace-nowrap shadow:lg">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colors whitespace-nowrap shadow:lg text-white bg-amber-700/40">
                             Projects i created
                      </a>
               </div>
@@ -53,13 +53,13 @@ export default function NavBar() {
 
               {/* RIGHT COLUMN: Keeps everything grouped cleanly together on the right */}
               <div className="flex gap-6 items-center justify-end  ">
-                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colours whitespace-nowrap shadow:lg ">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colours whitespace-nowrap shadow:lg text-white bg-amber-700/40">
                             Prompts
                      </a>
               
                      <div ref={dropdownRef} className="relative inline-block text-left">
                             <button 
-                                   className="flex items-center gap-1 border border-amber-200 rounded-lg font-custom text-2xl font-extrabold tracking-wide transition-all cursor-pointer hover:opacity-80 whitespace-nowrap shadow:lg"
+                                   className="flex items-center gap-1 border border-amber-200 rounded-lg font-custom text-2xl font-extrabold tracking-wide transition-all cursor-pointer hover:opacity-80 whitespace-nowrap shadow:lg text-white bg-amber-700/40"
                                    tabIndex={0}
                                    onClick={toggleDropdown}
                             >
