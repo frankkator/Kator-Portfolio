@@ -75,7 +75,7 @@ export default function WelcomePage() {
         </div>
 
         {/* Right Column: Profile Content Box */}
-        <div className="lg:grid-span-2">
+        <div className="lg:grid-span-1">
         <div className=' rounded-3xl p-6 shadow-lg min-62.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
           <p className="font-custom text-black font-semibold"> 
               Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build mordern, interactive digital experinces and I'd love to work with you.
