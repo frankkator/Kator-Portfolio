@@ -1,11 +1,15 @@
 import MyLogo from '../SVG/MyLogo.svg';
 import { motion, type Variants } from 'framer-motion';
 import CountUpModule from 'react-countup';
+import { ArrowRight } from 'lucide-react';
 
 // Safely extracts the valid functional component out of the module object wrapper
 const CountUp = (CountUpModule as any).CountUp || (CountUpModule as any).default || CountUpModule;
 
 export default function WelcomePage() {
+  const handleClick = () => {
+    alert('Project I created!');
+  };
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -54,8 +58,8 @@ export default function WelcomePage() {
     <div className="flex flex-col items-center min-h-screen w-full bg-[#f0e68c] relative p-6">
       
       {/* Floating Header */}
-      <div className='flex justify-center border border-amber-200/20 rounded-2xl shadow-md p-4 bg-white/10 backdrop-blur-sm mb-6'>
-        <h1 className="font-custom font-extrabold text-4xl  text-amber-950">
+      <div className='flex justify-center border border-amber-200/20 rounded-2xl shadow-md p-4 bg-white/0 backdrop-blur-sm mb-6'>
+        <h1 className="font-custom font-extrabold text-5xl md:text-6xl text-amber-950">
           Kator's Portfolio
         </h1>
       </div>
@@ -64,7 +68,7 @@ export default function WelcomePage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-8 w-full max-w-6xl items-start">
         
         {/* Left Column: Logo Stack */}
-        <div className="flex justify-center lg:justify-start md:sticky top-6">
+        <div className="flex justify-center lg:justify-start lg:sticky top-6">
           <img
             src={MyLogo}
             alt="Logo"
@@ -75,23 +79,46 @@ export default function WelcomePage() {
         </div>
 
         {/* Right Column: Profile Content Box */}
-        <div className="lg:grid-span-1 ">
-        <div className=' rounded-3xl p-6 shadow-lg min-62.5 border  border-amber-200 bg-white/30 backdrop-blur-md'>
-          <p className="font-custom text-black text-4xl text-center font-extrabold"> 
-              Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build mordern, interactive digital experinces and I'd love to work with you.
-          </p>      
-        </div>
-        <div className='rounded-3xl p-6 shadow-lg min-62.5 border mt-6 border-amber-200 bg-white/30 '>
-          <p  className="font-custom text-black text-3xl text-center font-extrabold">
+        <div className="col-span-1">
+          <div className='rounded-3xl p-6 shadow-lg min-h-72.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
+            <p className="font-custom text-black text-3xl md:text-4xl text-center font-extrabold"> 
+              Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build modern, interactive digital experiences and I'd love to work with you.
+            </p>      
+          </div>
+          <div className='rounded-3xl p-6 shadow-lg min-h-31.5 border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
+            <p className="font-custom text-black text-2xl md:text-3xl text-center font-extrabold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
-          </p>
+            </p>
           </div>
         </div> 
       </div>
 
+      {/* Action Buttons Section */}
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 max-w-xl mt-8">
+        <button 
+          className="flex items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 border border-amber-700 rounded-2xl shadow-2xl backdrop-blur-lg px-6 py-4 cursor-pointer transition-colors w-full sm:w-auto" 
+          onClick={handleClick}
+        > 
+          <span className="font-frank font-bold text-amber-300 whitespace-nowrap">
+            view project
+          </span>
+          <ArrowRight size={20} className="text-amber-300" />
+        </button>
+
+        <button 
+          className='flex items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 border border-amber-600 rounded-2xl shadow-2xl backdrop-blur-lg px-6 py-4 cursor-pointer transition-colors w-full sm:w-auto'
+          onClick={handleClick}
+        >
+          <span className='font-frank font-bold text-amber-200 whitespace-nowrap'>
+            view prompts
+          </span>
+          <ArrowRight size={20} className="text-amber-200" />
+        </button>
+      </div>
+
       {/* Bottom Section: Animated Stats Counter */}
       <motion.div
-        className='w-full max-w-4xl flex justify-center min-h-60 mt-4'
+        className='w-full max-w-4xl flex justify-center min-h-60 mt-12'
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -100,28 +127,28 @@ export default function WelcomePage() {
         <div className='flex flex-col md:flex-row gap-12 md:gap-24 justify-center items-center w-full'>
           
           <motion.div className='text-center' variants={clientsVariants}>
-            <h1 className="text-5xl font-extrabold text-amber-950">
+            <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={0} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/60 font-semibold mt-1'>
+            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
               clients
             </p>
           </motion.div>
 
           <motion.div className='text-center' variants={projectsworkedonVariants}>
-            <h1 className="text-5xl font-extrabold text-amber-950">
+            <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={10} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/60 font-semibold mt-1'>
+            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
               Projects i've worked on
             </p>
           </motion.div>
 
           <motion.div className='text-center' variants={projectcompletedVariants}>
-            <h1 className="text-5xl font-extrabold text-amber-950">
+            <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={7} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/60 font-semibold mt-1'>
+            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
               Projects Completed
             </p>
           </motion.div>

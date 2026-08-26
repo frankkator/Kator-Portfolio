@@ -31,11 +31,11 @@ export default function NavBar() {
        <nav className="w-full grid grid-cols-3 items-center border border-transparent bg-[#dda520]/70 py-4 px-8 relative transition-colors duration-500 ease-in-out">
               
               {/* LEFT COLUMN: Explicit Flex row layout for text items */}
-              <div className="flex gap-6 items-center justify-start">
-                     <a href="#" className="font-custom font-semibold tracking-wide hover:opacity-80 transition-opacity whitespace-nowrap">
+              <div className="flex gap-6 items-center justify-start ">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 transition-colors hover:opacity-80 whitespace-nowrap shadow:lg">
                             Profile
                      </a>
-                     <a href="#" className="font-custom font-semibold underline tracking-wide hover:opacity-80 transition-opacity whitespace-nowrap">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colors whitespace-nowrap shadow:lg">
                             Projects i created
                      </a>
               </div>
@@ -52,14 +52,14 @@ export default function NavBar() {
               </div>
 
               {/* RIGHT COLUMN: Keeps everything grouped cleanly together on the right */}
-              <div className="flex gap-6 items-center justify-end">
-                     <a href="#" className="font-custom font-semibold tracking-wide hover:opacity-80 transition-opacity whitespace-nowrap">
+              <div className="flex gap-6 items-center justify-end  ">
+                     <a href="#" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 hover:opacity-80 transition-colours whitespace-nowrap shadow:lg ">
                             Prompts
                      </a>
               
                      <div ref={dropdownRef} className="relative inline-block text-left">
                             <button 
-                                   className="flex items-center gap-1 border border-transparent rounded-lg font-custom font-semibold tracking-wide transition-all cursor-pointer hover:opacity-80 whitespace-nowrap"
+                                   className="flex items-center gap-1 border border-amber-200 rounded-lg font-custom text-2xl font-extrabold tracking-wide transition-all cursor-pointer hover:opacity-80 whitespace-nowrap shadow:lg"
                                    tabIndex={0}
                                    onClick={toggleDropdown}
                             >
@@ -76,13 +76,13 @@ export default function NavBar() {
                                           <div className="flex flex-col">
                                                  <NavLink 
                                                         to="/profile" 
-                                                        className="px-4 py-2 text-sm  hover:bg-amber-300/50  transition-colors font-custom font-bold"
+                                                        className="px-4 py-2 text-xl  hover:bg-amber-300/50  transition-colors font-custom font-bold"
                                                  >
                                                  Goals
                                                  </NavLink>
                                                  <NavLink 
                                                         to="/account" 
-                                                        className="px-4 py-2 text-sm hover:bg-amber-300/50 transition-colors font-custom font-bold"
+                                                        className="px-4 py-2 text-xl hover:bg-amber-300/50 transition-colors font-custom font-bold"
                                                  >
                                                         Experience
                                                  </NavLink> 
