@@ -109,7 +109,7 @@ export default function WelcomePage() {
           className='flex items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 border border-amber-600 rounded-2xl shadow-2xl backdrop-blur-lg px-6 py-4 cursor-pointer transition-colors w-full sm:w-auto'
           onClick={handleClick}
         >
-          <span className='font-frank font-bold text-amber-200 whitespace-nowrap'>
+          <span className='font-frank font-bold text-amber-300 whitespace-nowrap'>
             view prompts
           </span>
           <ArrowRight size={20} className="text-amber-200" />
