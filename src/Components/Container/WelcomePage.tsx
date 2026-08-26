@@ -54,14 +54,14 @@ export default function WelcomePage() {
     <div className="flex flex-col items-center min-h-screen w-full bg-[#f0e68c] relative p-6">
       
       {/* Floating Header */}
-      <div className='flex justify-center border border-amber-200 rounded-2xl shadow-md p-4 bg-white/50 backdrop-blur-sm mb-6'>
+      <div className='flex justify-center border border-amber-200 rounded-2xl shadow-md p-4 bg-white/40 backdrop-blur-sm mb-6'>
         <h1 className="font-custom font-extrabold text-4xl text-amber-950">
           Kator's Portfolio
         </h1>
       </div>
 
       {/* Main Grid Wrapper */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-8 w-full max-w-6xl items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-8 w-full max-w-6xl items-start">
         
         {/* Left Column: Logo Stack */}
         <div className="flex justify-center lg:justify-start md:sticky top-6">
@@ -75,17 +75,23 @@ export default function WelcomePage() {
         </div>
 
         {/* Right Column: Profile Content Box */}
-        <div className='lg:col-span-2 rounded-3xl p-6 shadow-md min-62.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
+        <div className="lg:grid-span-2">
+        <div className=' rounded-3xl p-6 shadow-lg min-62.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
           <p className="font-custom text-black font-semibold"> 
               Hi there, So my Name is Franklin Kator i'm a software developer and web-designer and i'll be glad to work with you.
-          </p>
+          </p>      
         </div>
-
+        <div className='rounded-3xl p-6 shadow-lg min-62.5 border mt-6 border-amber-200 bg-white/30 '>
+          <p  className="font-custom text-black font-semibold">
+              Soo, kindly, check out the projects i've done and contact me if interested.
+          </p>
+          </div>
+        </div> 
       </div>
 
       {/* Bottom Section: Animated Stats Counter */}
       <motion.div
-        className='w-full max-w-4xl flex justify-center min-h-60 mt-12'
+        className='w-full max-w-4xl flex justify-center min-h-60 mt-4'
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
