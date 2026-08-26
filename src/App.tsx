@@ -1,37 +1,24 @@
 import Home from "./Pages/Home"
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import LoginPage from "./Components/login-signup/LoginPage"
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from "./Components/Overlay/NavBar"
-
 import { ThemeProvider } from './Components/Overlay/Themecontext' 
 
-function NavigationWrapper() {
-  const location = useLocation(); 
-  const isLoginPage = location.pathname === '/' || location.pathname === '/login';
-
+export default function App() {
   return (
-         <>
-                {!isLoginPage && <NavBar />}
-                
-                <Routes>
-                       <Route path="/" element={<LoginPage />} />
-                       <Route path="/home" element={<Home />} />
-                </Routes>
-         </>
+    <ThemeProvider>
+      <BrowserRouter>
+        {/* The NavBar sits right here so it displays globally on every single page view */}
+        <NavBar />
+        
+        <Routes>
+          {/* Changed the root path "/" directly to your Home element, bypassing the Login layout completely */}
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
-function App() {
-  return (
-    // Wrap the entire app architecture here
-    <ThemeProvider>
-      <BrowserRouter>
-           <NavigationWrapper />
-      </BrowserRouter>
-    </ThemeProvider>
-  )
-}
-
-export default App
 
 

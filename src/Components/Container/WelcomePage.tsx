@@ -58,7 +58,7 @@ export default function WelcomePage() {
     <div className="flex flex-col items-center min-h-screen w-full bg-[#f0e68c] relative p-6">
       
       {/* Floating Header */}
-      <div className='flex justify-center border border-amber-200/20 rounded-2xl shadow-md p-4 bg-white/0 backdrop-blur-sm mb-6'>
+      <div className='flex justify-center border border-amber-200/20 rounded-2xl shadow-md p-4 bg-white/0 mt-10 backdrop-blur-sm mb-6'>
         <h1 className="font-custom font-extrabold text-5xl md:text-6xl text-amber-950">
           Kator's Portfolio
         </h1>
@@ -80,12 +80,12 @@ export default function WelcomePage() {
 
         {/* Right Column: Profile Content Box */}
         <div className="col-span-1">
-          <div className='rounded-3xl p-6 shadow-lg min-h-72.5 border border-amber-200 bg-white/30 backdrop-blur-md'>
+          <div className='rounded-3xl p-6 shadow-lg min-h-[290px] flex items-center justify-center border border-amber-200 bg-white/30 backdrop-blur-md'>
             <p className="font-custom text-black text-3xl md:text-4xl text-center font-extrabold"> 
-              Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build modern, interactive digital experiences and I'd love to work with you.
+              Hi there, So my Name is Frank Kator i'm a software developer and web-designer. I build modern, interactive digital experiences and I'd love to work with you.
             </p>      
           </div>
-          <div className='rounded-3xl p-6 shadow-lg min-h-31.5 border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
+          <div className='rounded-3xl p-6 shadow-lg min-h-[126px] flex items-center justify-center border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
             <p className="font-custom text-black text-2xl md:text-3xl text-center font-extrabold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
             </p>
@@ -93,26 +93,26 @@ export default function WelcomePage() {
         </div> 
       </div>
 
-      {/* Action Buttons Section */}
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 max-w-xl mt-8">
+      {/* Action Buttons Section (Perfectly matching the Profile component styling) */}
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 max-w-xl mt-12">
         <button 
-          className="flex items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 border border-amber-700 rounded-2xl shadow-2xl backdrop-blur-lg px-6 py-4 cursor-pointer transition-colors w-full sm:w-auto" 
+          className="flex items-center justify-center gap-3 w-full sm:w-auto border border-amber-200 bg-amber-900 hover:bg-amber-700 text-amber-50 rounded-2xl px-6 py-4 cursor-pointer transition-colors shadow-lg group" 
           onClick={handleClick}
         > 
-          <span className="font-frank font-bold text-amber-300 whitespace-nowrap">
-            view project
+          <span className="font-frank font-bold text-amber-50">
+            View Projects
           </span>
-          <ArrowRight size={20} className="text-amber-300" />
+          <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
         </button>
 
         <button 
-          className='flex items-center justify-center gap-3 bg-amber-800 hover:bg-amber-900 border border-amber-600 rounded-2xl shadow-2xl backdrop-blur-lg px-6 py-4 cursor-pointer transition-colors w-full sm:w-auto'
+          className="flex items-center justify-center gap-3 w-full sm:w-auto border border-amber-200 bg-amber-900 hover:bg-amber-700 text-amber-50 rounded-2xl px-6 py-4 cursor-pointer transition-colors shadow-lg group" 
           onClick={handleClick}
         >
-          <span className='font-frank font-bold text-amber-300 whitespace-nowrap'>
-            view prompts
+          <span className="font-frank font-bold text-amber-50">
+            View Prompts
           </span>
-          <ArrowRight size={20} className="text-amber-200" />
+          <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
 
