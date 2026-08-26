@@ -61,7 +61,7 @@ export default function WelcomePage() {
       </div>
 
       {/* Main Grid Wrapper */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-8 w-full max-w-6xl items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-8 w-full max-w-6xl items-start">
         
         {/* Left Column: Logo Stack */}
         <div className="flex justify-center lg:justify-start md:sticky top-6">
@@ -75,13 +75,13 @@ export default function WelcomePage() {
         </div>
 
         {/* Right Column: Profile Content Box */}
-        <div className="lg:grid-span-1">
-        <div className=' rounded-3xl p-6 shadow-lg min-w-36 border border-amber-200 bg-white/30 backdrop-blur-md'>
+        <div className="lg:grid-span-1 ">
+        <div className=' rounded-3xl p-6 shadow-lg min-62.5 border  border-amber-200 bg-white/30 backdrop-blur-md'>
           <p className="font-custom text-black text-4xl text-center font-extrabold"> 
               Hi there, So my Name is Franklin Kator i'm a software developer and web-designer. I build mordern, interactive digital experinces and I'd love to work with you.
           </p>      
         </div>
-        <div className='rounded-3xl p-6 shadow-lg min-w-36 border mt-6 border-amber-200 bg-white/30 '>
+        <div className='rounded-3xl p-6 shadow-lg min-62.5 border mt-6 border-amber-200 bg-white/30 '>
           <p  className="font-custom text-black text-3xl text-center font-extrabold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
           </p>
