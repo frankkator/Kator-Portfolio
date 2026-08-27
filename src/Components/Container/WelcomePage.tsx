@@ -59,7 +59,7 @@ export default function WelcomePage() {
       
       {/* Floating Header */}
       <div className='flex justify-center border border-amber-200/20 rounded-2xl shadow-md p-4 bg-white/0 mt-10 backdrop-blur-sm mb-6'>
-        <h1 className="font-custom font-extrabold text-5xl md:text-6xl text-amber-950">
+        <h1 className="font-frank font-extrabold text-5xl md:text-6xl text-amber-950">
           Kator's Portfolio
         </h1>
       </div>
@@ -81,12 +81,12 @@ export default function WelcomePage() {
         {/* Right Column: Profile Content Box */}
         <div className="col-span-1">
           <div className='rounded-3xl p-6 shadow-lg min-h-72.5 flex items-center justify-center border border-amber-200 bg-white/30 backdrop-blur-md'>
-            <p className="font-custom text-black text-3xl md:text-4xl text-center font-extrabold"> 
+            <p className="font-frank text-black text-3xl md:text-4xl text-center font-bold"> 
               Hi there, So my Name is Frank Kator i'm a software developer and web-designer. I build modern, interactive digital experiences and I'd love to work with you.
             </p>      
           </div>
           <div className='rounded-3xl p-6 shadow-lg min-h-31.5 flex items-center justify-center border mt-6 border-amber-200 bg-white/30 backdrop-blur-md'>
-            <p className="font-custom text-black text-2xl md:text-3xl text-center font-extrabold">
+            <p className="font-frank text-black text-2xl md:text-3xl text-center font-bold">
               Soo, kindly, check out the projects and prompts i've done and contact me if interested.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function WelcomePage() {
             <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={0} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
+            <p className='font-frank text-amber-900/80 text-2xl md:text-3xl font-semibold mt-1'>
               clients
             </p>
           </motion.div>
@@ -139,8 +139,8 @@ export default function WelcomePage() {
             <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={10} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
-              Projects i've worked on
+            <p className='font-frank text-amber-900/80 text-2xl md:text-3xl font-semibold mt-1'>
+              Projects worked on
             </p>
           </motion.div>
 
@@ -148,7 +148,7 @@ export default function WelcomePage() {
             <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
               <CountUp start={0} end={7} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
-            <p className='font-custom text-amber-900/80 text-2xl md:text-3xl font-extrabold mt-1'>
+            <p className='font-frank text-amber-900/80 text-2xl md:text-3xl font-semibold mt-1'>
               Projects Completed
             </p>
           </motion.div>

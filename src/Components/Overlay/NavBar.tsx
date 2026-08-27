@@ -89,10 +89,10 @@ export default function NavBar() {
           </button>
 
           <div className="hidden lg:flex gap-6 items-center">
-            <a href="#profile" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 px-3 py-1 transition-colors hover:opacity-80 whitespace-nowrap shadow-lg text-white bg-amber-700/40">
+            <a href="#profile" className="font-frank text-2xl font-semibold tracking-wide rounded-lg border border-amber-200 px-3 py-1 transition-colors hover:opacity-80 whitespace-nowrap shadow-lg text-white bg-amber-700/40">
               Profile
             </a>
-            <a href="#projects" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 px-3 py-1 hover:opacity-80 transition-colors whitespace-nowrap shadow-lg text-white bg-amber-700/40">
+            <a href="#projects" className="font-frank text-2xl font-semibold tracking-wide rounded-lg border border-amber-200 px-3 py-1 hover:opacity-80 transition-colors whitespace-nowrap shadow-lg text-white bg-amber-700/40">
               Projects
             </a>
           </div>
@@ -112,14 +112,14 @@ export default function NavBar() {
         {/* RIGHT COLUMN: Prompts & Dropdown */}
         <div className="flex gap-6 items-center justify-end">
           <div className="hidden lg:flex gap-6 items-center">
-            <a href="#prompts" className="font-custom text-2xl font-extrabold tracking-wide rounded-lg border border-amber-200 px-3 py-1 hover:opacity-80 transition-colors whitespace-nowrap shadow-lg text-white bg-amber-700/40">
+            <a href="#prompts" className="font-frank text-2xl font-semibold tracking-wide rounded-lg border border-amber-200 px-3 py-1 hover:opacity-80 transition-colors whitespace-nowrap shadow-lg text-white bg-amber-700/40">
               Prompts
             </a>
           </div>
         
           <div ref={dropdownRef} className="relative inline-block text-left">
             <button 
-              className="flex items-center gap-1 border border-amber-200 rounded-lg font-custom text-xl lg:text-2xl font-extrabold tracking-wide px-3 py-1 transition-all cursor-pointer hover:opacity-80 whitespace-nowrap shadow-lg text-white bg-amber-700/40"
+              className="flex items-center gap-1 border border-amber-200 rounded-lg font-frank text-xl lg:text-2xl font-semibold tracking-wide px-3 py-1 transition-all cursor-pointer hover:opacity-80 whitespace-nowrap shadow-lg text-white bg-amber-700/40"
               onClick={toggleDropdown}
             >
               <span className="hidden sm:inline">contact info</span>
@@ -130,10 +130,10 @@ export default function NavBar() {
             {showDropdown && (
               <div className="absolute right-0 mt-3 w-44 bg-[#dda520] rounded-xl shadow-xl border border-white/20 overflow-hidden z-50 py-1">
                 <div className="flex flex-col">
-                  <a href="#goals" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-custom font-bold block" onClick={handleScrollLinkClick}>
+                  <a href="#goals" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-frank font-semibold block" onClick={handleScrollLinkClick}>
                     Goals
                   </a>
-                  <a href="#experience" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-custom font-bold block" onClick={handleScrollLinkClick}>
+                  <a href="#experience" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-frank font-semibold block" onClick={handleScrollLinkClick}>
                     Experience
                   </a> 
                 </div>
@@ -147,13 +147,13 @@ export default function NavBar() {
       {/* MOBILE DRAWER */}
       {isMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-[#dda520] border-t border-amber-600/30 shadow-2xl p-6 flex flex-col gap-4 z-40 transition-all duration-300">
-          <a href="#profile" onClick={handleScrollLinkClick} className="font-custom text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
+          <a href="#profile" onClick={handleScrollLinkClick} className="font-frank text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
             Profile
           </a>
-          <a href="#projects" onClick={handleScrollLinkClick} className="font-custom text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
+          <a href="#projects" onClick={handleScrollLinkClick} className="font-frank text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
             Projects
           </a>
-          <a href="#prompts" onClick={handleScrollLinkClick} className="font-custom text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
+          <a href="#prompts" onClick={handleScrollLinkClick} className="font-frank text-xl font-extrabold tracking-wide rounded-lg border border-amber-200 p-3 text-center transition-colors text-white bg-amber-700/40">
             Prompts
           </a>
         </div>
