@@ -128,7 +128,7 @@ export default function WelcomePage() {
           
           <motion.div className='text-center' variants={clientsVariants}>
             <h1 className="text-7xl md:text-9xl font-extrabold text-amber-950">
-              <CountUp start={0} end={0} duration={1} enableScrollSpy scrollSpyOnce />+
+              <CountUp start={0} end={1} duration={1} enableScrollSpy scrollSpyOnce />+
             </h1>
             <p className='font-frank text-amber-900/80 text-2xl md:text-3xl font-semibold mt-1'>
               clients
