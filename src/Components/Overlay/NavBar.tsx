@@ -130,6 +130,9 @@ export default function NavBar() {
             {showDropdown && (
               <div className="absolute right-0 mt-3 w-44 bg-[#dda520] rounded-xl shadow-xl border border-white/20 overflow-hidden z-50 py-1">
                 <div className="flex flex-col">
+                     <a href="#Contact Info" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-frank font-semibold block uppercase" onClick={handleScrollLinkClick}>
+                     Contact Info
+                     </a>   
                   <a href="#goals" className="px-4 py-2 text-xl hover:bg-amber-600/50 text-white transition-colors font-frank font-semibold block" onClick={handleScrollLinkClick}>
                     Goals
                   </a>
